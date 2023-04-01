@@ -10,7 +10,7 @@ on:
         - '.github/workflows/rk-miui.yml'
   
 jobs:
-  runs-on: [self-hosted]
+  runs-on: self-hosted
 #   build-alioth-aosp-kernel:
 #     uses: ./.github/workflows/rk-aosp.yml
 #     with:
