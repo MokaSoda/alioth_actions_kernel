@@ -79,7 +79,7 @@ jobs:
     
     - name: Download Clang Toolchain
       run: |
-        git lfs clone -b amd64-kernel-arm --depth=1 https://codeberg.org/Mandi-Sa/clang.git clang
+        if [ ! -d ./clang]; than git lfs clone -b amd64-kernel-arm --depth=1 https://codeberg.org/Mandi-Sa/clang.git clang ; fi
         cd clang
         chmod -R +x ./
         git lfs install 
