@@ -84,7 +84,7 @@ jobs:
     - name: Download Clang Toolchain
       if: ${{ inputs.FIRST_COMPILER }} == true
       run: |
-        git lfs clone -b amd64-kernel-arm --depth=1 https://codeberg.org/Mandi-Sa/clang.git clang
+       #git lfs clone -b amd64-kernel-arm --depth=1 https://codeberg.org/Mandi-Sa/clang.git clang
         cd clang
         chmod -R +x ./
         git lfs install 
