@@ -82,6 +82,8 @@ jobs:
         git lfs clone -b amd64-kernel-arm --depth=1 https://codeberg.org/Mandi-Sa/clang.git clang
         cd clang
         chmod -R +x ./
+        git lfs install 
+        git lfs checkout
         CLANG_DIR=`pwd`
         echo "CLANG_DIR=$CLANG_DIR" >> $GITHUB_ENV
       
