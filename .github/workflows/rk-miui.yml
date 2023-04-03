@@ -172,6 +172,7 @@ jobs:
   
     - name: ZIP Kernel
       run: |
+        rm -rf image_output
         mkdir image_output
         cd android-kernel
         TIME=$(TZ=Asia/Shanghai date "+%Y%m%d%H%M")
