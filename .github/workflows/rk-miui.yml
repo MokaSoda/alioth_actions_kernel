@@ -148,6 +148,15 @@ jobs:
         
         sed -i 's/# CONFIG_SECCOMP is not set/CONFIG_SECCOMP=y/' ./out/.config
         sed -i 's/# CONFIG_PPP is not set/CONFIG_PPP=y/' ./out/.config
+        sed -i 's/# CONFIG_PPP_BSDCOMP is not set/CONFIG_PPP_BSDCOMP=y/' ./out/.config
+        sed -i 's/# CONFIG_PPP_FILTER is not set/CONFIG_PPP_FILTER=y/' ./out/.config
+        sed -i 's/# CONFIG_PPP_MPPE is not set/CONFIG_PPP_MPPE=y/' ./out/.config
+        sed -i 's/# CONFIG_PPP_MULTILINK is not set/CONFIG_PPP_MULTILINK=y/' ./out/.config
+        sed -i 's/# CONFIG_PPPOL2TP is not set/CONFIG_PPPOL2TP=y/' ./out/.config
+        sed -i 's/# CONFIG_PPPOE is not set/CONFIG_PPPOE=y/' ./out/.config
+        sed -i 's/# CONFIG_PPP_ASYNC is not set/CONFIG_PPP_ASYNC=y/' ./out/.config
+        sed -i 's/# CONFIG_PPP_SYNC_TTY is not set/CONFIG_PPP_SYNC_TTY=y/' ./out/.config
+        
         
         
     - name: Build Kernel
